@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="static/index.css" type="text/css">
+</head>
+<body>
+<h1>Создай свою бегущую строку!</h1>
+<form method="post">
+    {% csrf_token %}
+    <div class="container">
+        <h3>Настройки</h3>
+        <div class="item">
+            {{ form.title }}
+        </div>
+        <div class="item item-2">
+            <div class="el">
+                <label for="color_text">Цвет текста</label>
+                {{ form.color_text }}
+            </div>
+            <div class="el">
+                <label for="color_back">Цвет фона</label>
+                {{ form.color_back }}
+            </div>
+        </div>
+        <div class="item">
+            <label for="fps">Количество кадров в секунду</label>
+            {{ form.fps }}
+            <datalist id="values_fps">
+                <option value="20" label="20"></option>
+                <option value="40" label="40"></option>
+                <option value="60" label="60"></option>
+                <option value="80" label="80"></option>
+                <option value="100" label="100"></option>
+            </datalist>
+        </div>
+        <div class="item item-2">
+            <label for="time" class="el big">Длительность видео (с)</label>
+            {{ form.time }}
+        </div>
+        <div class="item item-2">
+            <label for="width" class="el big">Ширина видео (px)</label>
+            {{ form.width }}
+        </div>
+        <div class="item item-2">
+            <label for="height" class="el big">Высота видео (px)</label>
+            {{ form.height }}
+        </div>
+        <div class="item">
+            <button type="submit">Сгенерировать видео</button>
+        </div>
+
+
+    </div>
+</form>
+
+
+</body>
+</html>

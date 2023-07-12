@@ -1,0 +1,81 @@
+body {
+    font-family: sans-serif;
+}
+
+h1, h3 {
+    text-align: center;
+}
+
+form {
+    width: 40%;
+    margin: 0 auto;
+}
+
+input, button {
+  width: 100%;
+  box-sizing: border-box;
+  height: 30px;
+  border: solid 1px #d1d1d1;
+  border-radius: 10px;
+  padding: 0 10px;
+  background-color: white;
+}
+
+button {
+    height: 40px;
+    background-color: #4a52ff;
+    color: white;
+    font-size: 12pt;
+}
+
+datalist {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.item {
+    margin: 10px 20px
+}
+
+.color {
+    padding: 0;
+    border: None;
+    border-radius: 10px;
+}
+
+.item-2 {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.el {
+    flex-grow: 1;
+    flex-basis: 100px;
+}
+
+.big {
+    flex-grow: 2;
+}
+
+#text {
+    height: 40px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+button:active {
+    transform: scale(0.9);
+    transition: all 0.3s;
+    background-color: #9c9cff;
+}
