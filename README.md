@@ -20,4 +20,4 @@ https://colab.research.google.com/drive/1Vh03xGEzZmTn6ZsEpu7kygF-PZUwl96o?usp=sh
 4. Все запросы (текст и параметры видео) сохраняются в БД. Их можно смотреть и редактировать через admin-панель
 
 Вид пользовательской страницы:
-![Форма]([view.png])
+![Форма](https://github.com/LFiosx18/IT-solution_TestTask/blob/main/view.png)
