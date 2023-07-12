@@ -25,6 +25,8 @@ def create_video(text, color_text, color_back, fps, time, width, height):
     # Генерирация видео
     text_width, text_height = cv2.getTextSize(text, font, font_scale, 1)[0]
     i = round((width + text_width) / total_frames)  # Сдвиг текста
+    if i<1:
+        i=1
     x = width
     y = (height + text_height) // 2
     for frame_number in range(total_frames):
